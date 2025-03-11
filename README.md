@@ -2,7 +2,7 @@
 
 ## Tech Stack
 
-**Tests:** [README.MD](https://github.com/RokZ999/testingggg/blob/main/tests/readme.md)
+**Tests:** [README.MD](tests/README.md)
 - **Playwright**
 - **TypeScript**
 
