@@ -20,13 +20,6 @@
 │   └── workflows/          # GitHub Actions workflows
 ├── backend/                # Backend code
 ├── tests/                  # Test files
-│   ├── api.spec.ts         # Main test specifications
-├── playwright.config.ts    # Playwright configuration
-├── package.json            # Node.js dependencies
-├── Dockerfile              # Docker configuration for tests
-├── .env.example            # Example environment variables
-├── .gitignore              # Git ignore configuration
-├── README.md               # Project documentation
 ├── docker-compose.override.yml # Docker Compose override file
 └── docker-compose.yml      # Main Docker Compose configuration
 ```
