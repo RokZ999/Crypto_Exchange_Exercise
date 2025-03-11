@@ -1,0 +1,28 @@
+version: "3"
+services:
+  postgres:
+    environment:
+      POSTGRES_USER: test_user
+      POSTGRES_PASSWORD: test_password
+      POSTGRES_PW: test_password  
+      POSTGRES_DB: test_db
+      POSTGRES_HOST: postgres     
+      POSTGRES_PORT: 5432  
+  api:
+    environment:
+      POSTGRES_USER: test_user
+      POSTGRES_PASSWORD: test_password
+      POSTGRES_PW: test_password   
+      POSTGRES_DB: test_db
+      POSTGRES_HOST: postgres
+      POSTGRES_PORT: 5432        
+  tests:                      
+    environment:
+      POSTGRES_USER: test_user
+      POSTGRES_PASSWORD: test_password
+      POSTGRES_PW: test_password 
+      POSTGRES_DB: test_db
+      POSTGRES_HOST: postgres
+      POSTGRES_PORT: 5432
+      API_URL: http://api:8000
+      CI: true

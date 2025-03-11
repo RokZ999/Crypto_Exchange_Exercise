@@ -1,0 +1,31 @@
+name: ci
+on:
+  push:
+
+jobs:
+  compose:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+
+      - name: Set up Docker Compose
+        uses: docker/setup-compose-action@v1
+
+      - name: Start database and API services
+        run: docker compose -f docker-compose.yml -f docker-compose.override.yml up -d postgres api
+
+      - name: Run tests in foreground (wait for completion)
+        run: docker compose -f docker-compose.yml -f docker-compose.override.yml run --rm tests npx playwright test --reporter=html
+
+      - name: Upload Playwright Report
+        uses: actions/upload-artifact@v4
+        if: ${{ !cancelled() }}
+        with:
+          name: playwright-report
+          path: ./playwright-report/
+          retention-days: 30
+
+      - name: Stop Docker Compose
+        if: always()
+        run: docker compose down

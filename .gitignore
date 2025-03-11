@@ -1,0 +1,19 @@
+# API backend
+.idea
+.idea
+.venv
+*.env
+*.pyc
+*.iml
+*.xml
+
+# Playwright
+node_modules/
+/test-results/
+/playwright-report/
+/blob-report/
+/playwright/.cache/
+
+
+# Env
+*.env
