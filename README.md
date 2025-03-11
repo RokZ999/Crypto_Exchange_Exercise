@@ -51,3 +51,6 @@ docker-compose up -d
 
 ## Github actions - artifacts (Report of testrun CI/CD)
 Example of artifacts https://github.com/RokZ999/QA_Automation_Engineer_Homework/actions/runs/13793507198/artifacts/2731570460
+
+
+**Important The pipeline/local run intentionally failed due to the way it was designed.**
