@@ -1,4 +1,4 @@
-# QA 
+# QA_Automation_Engineer_Homework 
 
 ## Tech Stack
 
@@ -6,7 +6,7 @@
 - **Playwright**
 - **TypeScript**
 
-**Backend:** [README.MD](https://github.com/RokZ999/testingggg/blob/main/backend/readme.md)
+**Backend:** [README.MD](backend/README.md)
 - **FastAPI**: Modern, fast web framework for building APIs
 - **SQLModel**: SQL database interaction layer built on top of SQLAlchemy
 - **PostgreSQL**: Robust relational database
@@ -27,7 +27,7 @@
 
 Rename a `.env.example` -> `.env` and change credentials if needed.
 
-## Running PostgreSQL + API (Python) +  Tests (Playwright, Typescript)
+## Running Local PostgreSQL + API (Python) +  Tests (Playwright, Typescript)
 
 1. Build and start the containers:
 ```bash
@@ -35,3 +35,6 @@ docker-compose up -d
 ```
 2. The API will be available at http://localhost:8000
 3. The result of suite will be in /playwright-report 
+
+## Github actions - artifacts (Report of testrun CI/CD)
+Example of artifacts https://github.com/RokZ999/QA_Automation_Engineer_Homework/actions/runs/13793507198/artifacts/2731570460
