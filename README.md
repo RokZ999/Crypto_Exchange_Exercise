@@ -43,7 +43,7 @@ docker-compose up -d
 3. The result of suite will be in /playwright-report 
 
 ## Github actions - artifacts (Report of testrun CI/CD)
-Example of artifacts https://github.com/RokZ999/QA_Automation_Engineer_Homework/actions/runs/13793507198/artifacts/2731570460
+Example of artifacts https://github.com/RokZ999/Crypto_Exchange_Exercise/actions/runs/13794074603/artifacts/2731783973
 
 
-**Important The pipeline/local run intentionally failed due to the way it was designed.**
+**Important The pipeline/localrun intentionally fails due to the way it was designed. (demonstrating bug in backend as example)**
