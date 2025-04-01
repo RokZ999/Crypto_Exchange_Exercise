@@ -1,4 +1,4 @@
-# QA_Automation_Engineer_Homework 
+# Crypto_Exchange_Exercise
 
 ## Tech Stack
 
