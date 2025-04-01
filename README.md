@@ -36,7 +36,7 @@ Rename a `.env.example` -> `.env` and change credentials if needed.
 
 1. Build and start the containers:
 ```bash
-git clone https://github.com/RokZ999/QA_Automation_Engineer_Homework
+git clone https://github.com/RokZ999/Crypto_Exchange_Exercise/
 docker-compose up -d
 ```
 2. The API will be available at http://localhost:8000
